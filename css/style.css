@@ -137,5 +137,6 @@ a.all-quests:after {
 }
 .common-map {
   height: 400px;
+  margin-bottom: 0;
 }
 }
