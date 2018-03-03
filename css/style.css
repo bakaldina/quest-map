@@ -1,0 +1,141 @@
+body {
+  font-size: 16px;
+}
+
+ul.breadcrumb {
+  padding: 0;
+  margin-top: 45px;
+  font-size: 14px;
+}
+.breadcrumb li {
+  display: inline-block;
+}
+.breadcrumb li a {
+color: #939292;
+}
+.breadcrumb__active {
+  color: #ff711b;
+}
+.breadcrumb__active:before {
+  color: #cccccc;
+  content: "/";
+  padding: 0 10px;
+}
+ol.map-list {
+  padding: 0;
+  list-style-position: inside;
+  margin: 0;
+}
+.common-map {
+  height: 715px;
+  margin-bottom: 100px;
+}
+.map h1 {
+  margin-bottom: 70px;
+}
+.map-list li {
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+.map-list a {
+  text-decoration: none;
+  color: #000;
+}
+.map-list-light {
+  font-weight: 400;
+}
+.map-title {
+  font-size: 36px;
+}
+.map-list a:hover,
+.map-link a:hover {
+  color: #ff5a5f;
+}
+.map-link {
+  margin-bottom: 40px;
+}
+.map-link,
+.map-link a {
+  color: #888888;
+  font-size: 16px;
+}
+.map-link a {
+  text-decoration: underline;
+}
+.map-image img {
+  width: 295px;
+  height: 345px;
+  margin-top: 74px;
+  margin-bottom: 16px;
+}
+.map-button {
+  background-color: #ff5a5f;
+  margin: 0 auto;
+  border-radius: 8px;
+  font-size: 18px;
+  width: 225px;
+  height: 60px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 60px;
+  margin-top: 44px;
+}
+.map-button a {
+  color: #fff;
+  text-decoration: none;
+}
+.map-button::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-image: url(../img/timetable.png);
+
+}
+.all-quests {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-hide{
+    display: none;
+  }
+  .map-title {
+    font-size: 22px;
+  }
+  .map-list li {
+    margin-bottom: 16px;
+  }
+  .map h1 {
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+  ol.map-list {
+    margin: 20px 0;
+  }
+  a.all-quests {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    color: #ff6600;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+a.all-quests:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-left: 2px solid #ff6600;
+  border-bottom: 2px solid #ff6600;
+  -webkit-transform: rotate(-45deg) translate(8px, 4px);
+  transform: rotate(-45deg) translate(8px, 4px);
+}
+.common-map {
+  height: 400px;
+}
+}
